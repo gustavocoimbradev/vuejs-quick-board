@@ -1,29 +1,36 @@
-# quick-board
+<img height="100" alt="quick-board-hero" src="https://github.com/user-attachments/assets/75fa5e93-d016-436a-bc47-4b80c2e3bf30" />
 
-This template should help get you started developing with Vue 3 in Vite.
+## About the project
 
-## Recommended IDE Setup
+This is a simple Kanban board built with Vue.js, featuring four lists (To Do, In Progress, Done, Archived) and draggable cards. It was created for learning and portfolio purposes, focusing on Composition API, drag & drop integration, and localStorage persistence.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+#### Features
 
-## Customize configuration
+- Four predefined lists (To Do, In Progress, Done, Archived)  
+- Add new cards through a modal dialog  
+- Drag & drop cards between lists (`vuedraggable`)  
+- Expand/collapse list content  
+- Automatic saving to `localStorage`  
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+#### Technologies
 
-## Project Setup
+- Vue 3 + Vite  
+- Tailwind CSS  
+- Composition API  
+- vuedraggable  
 
-```sh
-npm install
-```
+## Main Files
 
-### Compile and Hot-Reload for Development
+#### Components
 
-```sh
-npm run dev
-```
+- [`List.vue`](src/components/List.vue) – List container with header, collapse toggle, and "Add Card" button  
+- [`Card.vue`](src/components/Card.vue) – Individual card with title/description  
+- [`ModalDialog.vue`](src/components/ModalDialog.vue) – Modal form to add new cards  
+- [`App.vue`](src/App.vue) – Root component with state, persistence, and draggable integration  
 
-### Compile and Minify for Production
+#### Core
 
-```sh
-npm run build
-```
+- [`main.js`](src/main.js) – App entry point  
+- [`vite.config.js`](vite.config.js) – Vite configuration  
+- [`main.css`](src/main.css) – Global styles (Tailwind)  
+- [`index.html`](index.html) – Main HTML file  
