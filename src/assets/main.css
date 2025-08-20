@@ -1,0 +1,10 @@
+@import "tailwindcss"; 
+
+@layer base {
+    * {
+        @apply transition-all ease-in-out duration-300;
+    }
+    button {
+        @apply cursor-pointer;
+    }
+}
